@@ -43,3 +43,7 @@ streamlit.header("The Fruit load list contains:")
                #text("Hello from Snowflake:")
 streamlit.dataframe(my_data_rows)
 #text(my_data_row)
+
+streamlit.text("¿What fruit would you like to add?")
+fruit_choice = streamlit.text_input('What fruit would you like information about?','jackfruit')
+streamlit.write('Thanks for adding', fruit_choice)
